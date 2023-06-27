@@ -14,6 +14,5 @@ function generateLetterPair(alphabet) {
         letter1 = alphabet[randomInt(alphabet.length)]
         letter2 = alphabet[randomInt(alphabet.length)]
     }
-    
     letterPair.innerHTML = letter1 + letter2
 }

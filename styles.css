@@ -1,0 +1,17 @@
+.body {
+    background-color: black;
+}
+.title {
+    color: white;
+    text-align: center;
+}
+#letterPair {
+    color: white;
+    text-align: center;
+}
+#button {
+    background-color: white;
+}
+.goBack {
+    background-color: white;
+}
