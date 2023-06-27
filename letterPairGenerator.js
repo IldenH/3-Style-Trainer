@@ -28,12 +28,11 @@ function randomInt(max) {
 }
 
 function generateLetterPair(piece) {
-    let letter1 = piece[randomInt(piece.length)][randomInt(piece[0].length)]
-    let letter2 = piece[randomInt(piece.length)][randomInt(piece[0].length)]
-    while (letter1 == letter2) {
-        letter1 = piece[randomInt(piece.length)][randomInt(piece[0].length)]
-        letter2 = piece[randomInt(piece.length)][randomInt(piece[0].length)]
-    }
+    pieces = piece.slice()
+    randomPiece1 = randomInt(pieces.length)
+    let letter1 = pieces[randomPiece1][randomInt(pieces[0].length)]
+    pieces.splice(randomPiece1, 1)
+    let letter2 = pieces[randomInt(pieces.length)][randomInt(pieces[0].length)]
 
     letterPair.textContent = letter1 + letter2
 }
