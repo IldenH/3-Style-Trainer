@@ -1,20 +1,10 @@
-let cornerAlphabet = "ABDEFGHIKLNOPQRSTUVWX".split("") // removed C, J, M
-let edgeAlphabet = "ABDEFGHJKLMNOPQRSTUVWX".split("") // removed C, I
-let title = document.getElementById("title")
+const cornerAlphabet = "ABDEFGHIKLNOPQRSTUVWX".split("") // removed C, J, M
+const edgeAlphabet = "ABDEFGHJKLMNOPQRSTUVWX".split("") // removed C, I
 let button = document.getElementById("button")
 let letterPair = document.getElementById("letterPair")
 
 function randomInt(max) {
     return Math.floor(Math.random() * max)
-}
-
-if (title.innerHTML == "Edges") {
-    generateLetterPair(edgeAlphabet)
-    button.addEventListener("click", function() { generateLetterPair(edgeAlphabet)})
-}
-else {
-    generateLetterPair(cornerAlphabet)
-    button.addEventListener("click", function() { generateLetterPair(cornerAlphabet)})
 }
 
 function generateLetterPair(alphabet) {
