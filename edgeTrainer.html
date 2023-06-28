@@ -16,5 +16,6 @@
 <script>
 button.addEventListener("click", ()=>generateLetterPair(edgePieces))
 generateLetterPair(edgePieces)
+document.body.onkeyup = function(e) { if (e.code == "Space" || e.code == "Enter") generateLetterPair(edgePieces) };
 </script>
 </html>
