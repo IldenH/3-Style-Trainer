@@ -1,17 +1,35 @@
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    color: rgb(200, 200, 200);
+    user-select: none;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .body {
     background-color: black;
 }
 .title {
-    color: white;
-    text-align: center;
+    margin-top: 10vh;
+    font-size: 5vw;
 }
 #letterPair {
-    color: white;
-    text-align: center;
+    font-size: 4vw;
 }
 #button {
-    background-color: white;
+    font-size: 4vmin;
+    background-color: rgb(39, 39, 39);
+    margin-top: 1vh;
 }
-.goBack {
-    background-color: white;
+.lineBreak {
+    color: rgb(1, 1, 1);
+}
+.links {
+    font-size: 3vmin;
+    background-color: rgb(39, 39, 39);
+    margin-top: 1vh;
+    text-decoration: none;
 }
